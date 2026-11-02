@@ -178,7 +178,7 @@ footer{border-top:1px solid var(--border);padding:2.5rem 0;text-align:center;fon
         <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
         <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
       </button>
-      <a href="#pricing" class="pill">Панель</a>
+      <a href="https://lk.litemc.pro" class="pill">Панель</a>
     </div>
   </nav>
 </header>
@@ -263,7 +263,7 @@ document.addEventListener("mousemove",function(e){
 });
 
 // ---- Терминал ----
-var lines=["$ litemc deploy --plan X-EXB-2 --os ubuntu-24.04","→ Выделяем ядра AMD Ryzen 9 9950X...","→ Монтируем NVMe 120 ГиБ...","→ Включаем DDoS-защиту...","✓ Сервер запущен за 47 сек · 185.42.11.7"];
+var lines=["$ litemc deploy --plan X-EXB-2 --os ubuntu-24.04","→ Выделяем ядра AMD Ryzen 9 9950X...","→ Монтируем NVMe 120 ГиБ...","→ Включаем DDoS-защиту...","✓ Сервер запущен за 47 сек · 5.231.230.XXX"];
 var n=0,tl=document.getElementById("termLines");
 setInterval(function(){
   n=(n+1)%(lines.length+3);
@@ -304,11 +304,11 @@ var groups=[
   P("X-EXB-2",120,16,6,5700,1839,"2 Гбит/с","10 ТБ/мес"),P("X-EXB-3",200,24,8,5700,2739,"4 Гбит/с","15 ТБ/мес"),
   P("X-EXB-4",350,32,10,5700,3569,"6 Гбит/с","20 ТБ/мес"),P("X-EXB-5",600,48,12,5700,5349,"8 Гбит/с","25 ТБ/мес")]},
  {id:"r7950",title:"Ryzen 9 7950X",dc:"AMD Ryzen 9 7950X | Россия, Москва",ai:false,plans:[
-  P("EXB-1",70,8,4,5700,1098),P("EXB-2",120,16,6,5700,1868),P("EXB-3",200,24,8,5700,2748),
-  P("EXB-4",350,32,10,5700,4068),P("EXB-5",600,48,12,5700,7698)]},
+  P("EXB-1",70,8,4,5700,1098,"500 Мбит/с"),P("EXB-2",120,16,6,5700,1868,"500 Мбит/с"),P("EXB-3",200,24,8,5700,2748,"500 Мбит/с"),
+  P("EXB-4",350,32,10,5700,4068,"500 Мбит/с"),P("EXB-5",600,48,12,5700,7698,"500 Мбит/с")]},
  {id:"e3",title:"Xeon E3-1245v2",dc:"E3-1245v2 or better | Германия, Франкфурт",ai:true,plans:[
-  P("EU-AEX-0",20,4,2,3300,259),P("EU-AEX-1",40,8,4,3300,539),P("EU-AEX-2",100,16,8,3300,999),
-  P("EU-AEX-3",150,24,10,3300,1800),P("EU-AEX-4",300,32,16,3300,2600),P("EU-AEX-5",500,64,20,3300,3600)]}
+  P("EU-AEX-0",20,4,2,3300,259,"1 Гбит/с"),P("EU-AEX-1",40,8,4,3300,539,"1 Гбит/с"),P("EU-AEX-2",100,16,8,3300,999,"1.2 Гбит/с"),
+  P("EU-AEX-3",150,24,10,3300,1800,"1.4 Гбит/с"),P("EU-AEX-4",300,32,16,3300,2600,"1.7 Гбит/с"),P("EU-AEX-5",500,64,20,3300,3600,"2 Гбит/с")]}
 ];
 var cur=groups[0].id;
 function renderPricing(){

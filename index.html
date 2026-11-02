@@ -291,7 +291,7 @@ var cio=new IntersectionObserver(function(es){es.forEach(function(e){
 document.querySelectorAll("[data-to]").forEach(function(el){cio.observe(el)});
 
 // ---- Возможности ----
-var features=[["AMD Ryzen 9 до 5.7 ГГц","Высокая частота на ядро для приложений и игр."],["NVMe-накопители","Быстрые диски на всех тарифах."],["Защита от DDoS","Фильтрация атак включена по умолчанию."],["Быстрая выдача","Сервер готов к работе сразу после оплаты."],["Каналы до 8 Гбит/с","Симметричная скорость входящего и исходящего трафика."],["Поддержка 24/7","Инженеры на связи круглосуточно."]];
+var features=[["AMD Ryzen 9 до 5.7 ГГц","Высокая частота на ядро для приложений и игр."],["NVMe-накопители","Быстрые диски на всех тарифах."],["Защита от DDoS","Фильтрация атак включена по умолчанию."],["Быстрая выдача","Сервер готов к работе сразу после оплаты."],["Каналы до 10 Гбит/с","Симметричная скорость входящего и исходящего трафика."],["Поддержка 24/7","Инженеры на связи круглосуточно."]];
 document.getElementById("featGrid").innerHTML=features.map(function(f,i){
   return '<div class="feat glass card-hover reveal" style="transition-delay:'+i*80+'ms"><div class="mono c-accent" style="font-size:.875rem;margin-bottom:1.5rem">0'+(i+1)+'</div><h3>'+f[0]+'</h3><p class="muted">'+f[1]+'</p></div>';
 }).join("");
